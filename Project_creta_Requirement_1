@@ -1,0 +1,8 @@
+pm.test("Your test name", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.coord.lon).to.eql(-0.13);
+});
+pm.test("Your test name", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.coord.lat).to.eql(51.51);
+});
